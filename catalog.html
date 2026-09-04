@@ -112,7 +112,11 @@
                   <input type="number" name="max-price" id="max-price" placeholder="9000" value="9000">
                 </div>
               </div>
-              <div class="price__range"></div>
+              <div class="price__slider slider">
+                <div class="slider__range"></div>
+                <button class="slider__thumb slider__thumb--min" type="button" role="slider" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0" aria-label="Минимальная цена"></button>
+                <button class="slider__thumb slider__thumb--max" type="button" role="slider" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="9000" aria-label="Максимальная цена"></button>
+              </div>
             </fieldset>
             <div class="filter__btns">
               <button class="btn btn--secondary" type="submit">Применить</button>
