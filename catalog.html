@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог гостиниц</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="page">
@@ -39,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-user__item">
-              <a class="navigation-user__link btn btn--primary" href="#">Хочу сюда!</a>
+              <a class="navigation-user__link btn" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -104,12 +105,12 @@
               <legend class="filter-group__title">Стоимость, ₽:</legend>
               <div class="filter-group__control price-control">
                 <div class="price-control__from price-control__field">
-                  <label for="min-price">От</label>
-                  <input type="number" name="min-price" id="min-price" placeholder="0" value="0">
+                  <label class="price-control__label" for="min-price">От</label>
+                  <input class="price-control__input" type="number" name="min-price" id="min-price" placeholder="0" value="0">
                 </div>
                 <div class="price-control__to price-control__field">
-                  <label for="max-price">До</label>
-                  <input type="number" name="max-price" id="max-price" placeholder="9000" value="9000">
+                  <label class="price-control__label" for="max-price">До</label>
+                  <input class="price-control__input" type="number" name="max-price" id="max-price" placeholder="9000" value="9000">
                 </div>
               </div>
               <div class="price__slider slider">
@@ -127,7 +128,7 @@
 
         <section class="catalog" data-test="catalog">
           <div class="catalog__sort sort">
-            <h2 class="sort__title">Найдено гостиниц:
+            <h2 class="section-title sort__title">Найдено гостиниц:
               <span class="sort__title-number">38</span>
             </h2>
             <select class="sort__select" name="price-select" id="price-select" aria-label="Сортировка">
@@ -160,14 +161,14 @@
                 <img class="card__image" src="images/photos/amara-resort-and-spa.jpg" width="300" height="212" alt="Вид на звездное небо из каньона">
               </a>
               <a class="card__title-link" href="#">
-                <h3 class="card__title">Amara Resort & Spa</h3>
+                <h3 class="section-subtitle card__title">Amara Resort & Spa</h3>
               </a>
-              <div class="card__wrapper--housing">
+              <div class="section-text card__wrapper--housing">
                 <p class="card__housing-type">Гостиница</p>
                 <p class="card__price">От 4000 ₽</p>
               </div>
               <div class="card__wrapper--btns">
-                <a class="btn btn--primary" href="#">Подробнее</a>
+                <a class="btn" href="#">Подробнее</a>
                 <button class="btn btn--secondary" type="button">В избранное</button>
               </div>
               <div class="card__wrapper--rating">
@@ -184,14 +185,14 @@
                 <img class="card__image" src="images/photos/villas-at-poco-diablo.jpg" width="300" height="212" alt="Вид на каньон на фоне грозовой тучи и радуги">
               </a>
               <a class="card__title-link" href="#">
-                <h3 class="card__title">Villas at Poco Diablo</h3>
+                <h3 class="section-subtitle card__title">Villas at Poco Diablo</h3>
               </a>
-              <div class="card__wrapper--housing">
+              <div class="section-text card__wrapper--housing">
                 <p class="card__housing-type">Гостиница</p>
                 <p class="card__price">От 5000 ₽</p>
               </div>
               <div class="card__wrapper--btns">
-                <a class="btn btn--primary" href="#">Подробнее</a>
+                <a class="btn" href="#">Подробнее</a>
                 <button class="btn btn--fourth" type="button">В избранном</button>
               </div>
               <div class="card__wrapper--rating">
@@ -208,14 +209,14 @@
                 <img class="card__image" src="images/photos/desert-quail-inn.jpg" width="300" height="212" alt="Вид на каньон на закате">
               </a>
               <a class="card__title-link" href="#">
-                <h3 class="card__title">Desert Quail Inn</h3>
+                <h3 class="section-subtitle card__title">Desert Quail Inn</h3>
               </a>
-              <div class="card__wrapper--housing">
+              <div class="section-text card__wrapper--housing">
                 <p class="card__housing-type">Гостиница</p>
                 <p class="card__price">От 2500 ₽</p>
               </div>
               <div class="card__wrapper--btns">
-                <a class="btn btn--primary" href="#">Подробнее</a>
+                <a class="btn" href="#">Подробнее</a>
                 <button class="btn btn--secondary" type="button">В избранное</button>
               </div>
               <div class="card__wrapper--rating">
@@ -232,14 +233,14 @@
                 <img class="card__image" src="images/photos/greentree-inn.jpg" width="300" height="212" alt="Вид на каньон на фоне звездного неба">
               </a>
               <a class="card__title-link" href="#">
-                <h3 class="card__title">GreenTree Inn</h3>
+                <h3 class="section-subtitle card__title">GreenTree Inn</h3>
               </a>
-              <div class="card__wrapper--housing">
+              <div class="section-text card__wrapper--housing">
                 <p class="card__housing-type">Гостиница</p>
                 <p class="card__price">От 1500 ₽</p>
               </div>
               <div class="card__wrapper--btns">
-                <a class="btn btn--primary" href="#">Подробнее</a>
+                <a class="btn" href="#">Подробнее</a>
                 <button class="btn btn--secondary" type="button">В избранное</button>
               </div>
               <div class="card__wrapper--rating">
@@ -279,8 +280,8 @@
       </main>
 
       <section class=" subscription" data-test="subscribe">
-        <h2 class="subscription__title subscription__title--inner">Подпишитесь на рассылку</h2>
-        <p class="subscription__description subscription__description--inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="section-title subscription__title subscription__title--inner">Подпишитесь на рассылку</h2>
+        <p class="section-description subscription__description subscription__description--inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Введите ваш e-mail</label>
           <input class="subscription__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
