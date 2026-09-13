@@ -144,6 +144,10 @@ body {
   text-decoration: none;
 }
 
+.likes-counter {
+  background-color: var(--buttons-select);
+}
+
 .hero {
   background-image: url("../images/backgrounds/hero-divider.svg"), url("../images/backgrounds/hero.jpg");
   background-repeat: no-repeat, no-repeat;
