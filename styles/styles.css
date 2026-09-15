@@ -16,12 +16,12 @@
 
 :root {
   --font-family: "PT Sans", Arial,sans-serif;
-	--texts-second: #333;
+	--texts-second: #333333;
 	--texts-error: #ff5757;
 	--texts-hover: #756157;
 	--texts-active: rgba(117, 97, 87, 0.3);
-	--texts-texts-basic: #000;
-	--texts-background-default: #fff;
+	--texts-texts-basic: #000000;
+	--texts-background-default: #ffffff;
 	--texts-background-small: rgba(255, 255, 255, 0.3);
 	--texts-background-hover: rgba(255, 255, 255, 0.6);
 	--texts-background-active: rgba(255, 255, 255, 0.3);
@@ -32,12 +32,12 @@
 	--buttons-brown-hover: #615048;
 	--buttons-blue-hover: #68a2ca;
 	--buttons-green-hover: #6c9e42;
-	--background-basic-1: #fff;
+	--background-basic-1: #ffffff;
 	--background-basic-2: rgba(0, 0, 0, 0.3);
 	--background-basic-3: #82b3d3;
 	--background-second-1: rgba(131, 179, 211, 0.12);
 	--background-second-2: rgba(131, 179, 211, 0.2);
-	--icons-basic: #000;
+	--icons-basic: #000000;
 	--icons-second: #83b3d3;
 	--icons-text: #7db54f;
 	--icons-hover: #756157;
@@ -61,7 +61,7 @@ img {
   object-fit: contain;
 }
 
-body {
+.page {
   width: 1200px;
   margin: 0 auto;
 
