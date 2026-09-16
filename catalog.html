@@ -8,7 +8,7 @@
   </head>
 
   <body class="page">
-    <div class="page-сontainer">
+    <div class="page-container">
       <header class="page-header" data-test="header">
         <a class="page-header__logo-link" href="index.html">
           <img class="page-header__logo-img" src="images/logos/sedona.svg" width="140" height="70" alt="Логотип города Седона">
@@ -46,7 +46,7 @@
         </nav>
       </header>
 
-      <main class="main-inner" data-test="main">
+      <main class="main-container main-inner" data-test="main">
         <section class="hotels-filter" data-test="filter">
           <header class="inner-header">
             <h1 class="inner-header__title">Гостиницы Седоны</h1>
@@ -277,17 +277,17 @@
             </ul>
           </nav>
         </section>
-      </main>
 
-      <section class=" subscription" data-test="subscribe">
-        <h2 class="section-title subscription__title subscription__title--inner">Подпишитесь на рассылку</h2>
-        <p class="section-description subscription__description subscription__description--inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="email">Введите ваш e-mail</label>
-          <input class="subscription__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <button class="subscription__btn btn btn--secondary" type="submit">Подписаться</button>
-        </form>
-      </section>
+        <section class=" subscription" data-test="subscribe">
+          <h2 class="section-title subscription__title subscription__title--inner">Подпишитесь на рассылку</h2>
+          <p class="section-description subscription__description subscription__description--inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="email">Введите ваш e-mail</label>
+            <input class="subscription__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <button class="subscription__btn btn btn--secondary" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </main>
 
       <footer class="page-footer" data-test="footer">
         <ul class="socials__list">
