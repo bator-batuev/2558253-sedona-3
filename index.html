@@ -15,7 +15,7 @@
         </a>
 
         <nav class="navigation">
-          <ul class="navigation__list">
+          <ul class="list navigation__list">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current" href="index.html" aria-current="page">Главная</a>
             </li>
@@ -27,7 +27,7 @@
             </li>
           </ul>
 
-          <ul class="navigation-user__list">
+          <ul class="list navigation-user__list">
             <li class="navigation-user__item">
               <a class="navigation-user__link navigation-user__link--search" href="#">
                 <span class="visually-hidden">Поиск</span>
@@ -59,13 +59,13 @@
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__wrapper advantages__wrapper--wide">
-                <h3 class="section-subtitle advantages__title">Настоящий городок</h3>
-                <p class="section-text section-text--wide advantages__description">Седона — не аттракцион для туристов, там
-                  течёт своя жизнь</p>
-              </div>
+          <ul class="list advantages__list">
+            <li class="advantages__item advantages__wrapper--wide">
+              <h3 class="section-subtitle advantages__title">Настоящий городок</h3>
+              <p class="section-text section-text--wide advantages__description">Седона — не аттракцион для туристов, там
+                течёт своя жизнь</p>
+            </li>
+            <li class="advantages__item city-img">
               <img class="advantages__img" src="images/photos/sedona-street.jpg" width="800" height="385" alt="Площадь города Седона с магазинами и кафе">
             </li>
             <li class="advantages__item">
@@ -80,13 +80,13 @@
               <h3 class="section-subtitle advantages__title">Мало туристов</h3>
               <p class="section-text advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages__item">
-              <div class="advantages__wrapper advantages__wrapper--wide">
-                <h3 class="section-subtitle advantages__title">Там есть мост Дьявола</h3>
-                <p class="section-text section-text--wide advantages__description">Да, по нему можно пройти! Если вы
-                  осмелитесь, разумеется</p>
-              </div>
+            <li class="advantages__item devils-bridge-img">
               <img class="advantages__img" src="images/photos/devils-bridge.jpg" width="800" height="385" alt="Мост Дьявола">
+            </li>
+            <li class="advantages__item advantages__wrapper--wide">
+              <h3 class="section-subtitle advantages__title">Там есть мост Дьявола</h3>
+              <p class="section-text section-text--wide advantages__description">Да, по нему можно пройти! Если вы
+                осмелитесь, разумеется</p>
             </li>
           </ul>
         </section>
@@ -96,7 +96,7 @@
             <h2 class="section-title service__title--main">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="section-description service__description--main">Опытный персонал и качественное обслуживание!</p>
           </div>
-          <ul class="service__list">
+          <ul class="list service__list">
             <li class="service__item housing">
               <h3 class="section-subtitle service__title">Жильё</h3>
               <p class="section-text service__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -119,8 +119,8 @@
         </section>
 
         <section class="subscription subscription--index" data-test="subscribe">
-          <h2 class="section-title subscription__title--index">Подпишитесь на рассылку</h2>
-          <p class="section-description subscription__description--index">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="section-title subscription__title subscription__title--index">Подпишитесь на рассылку</h2>
+          <p class="section-description subscription__description subscription__description--index">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Введите ваш e-mail</label>
             <input class="subscription__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
@@ -130,7 +130,7 @@
       </main>
 
       <footer class="page-footer" data-test="footer">
-        <ul class="socials__list">
+        <ul class="list socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Вконтакте</span>
