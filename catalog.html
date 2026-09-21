@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-user__item">
-              <a class="navigation-user__link btn" href="#">Хочу сюда!</a>
+              <a class="btn" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -71,37 +71,37 @@
               <legend class="filter-group__title">Инфрастуктура:</legend>
               <ul class="list filter-group__list">
                 <li class="filter-group__item">
-                  <label class="filter-group__label" for="pool">Бассейн</label>
                   <input class="filter-group__checkbox" type="checkbox" name="pool" id="pool" checked>
+                  <label class="filter-group__label" for="pool">Бассейн</label>
                 </li>
                 <li class="filter-group__item">
-                  <label class="filter-group__label" for="parking">Парковка</label>
                   <input class="filter-group__checkbox" type="checkbox" name="parking" id="parking" checked>
+                  <label class="filter-group__label" for="parking">Парковка</label>
                 </li>
                 <li class="filter-group__item">
-                  <label class="filter-group__label" for="wi-fi">Wi-Fi</label>
                   <input class="filter-group__checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                  <label class="filter-group__label" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__group housing">
+            <fieldset class="filter-group housing">
               <legend class="filter-group__title">Тип Жилья:</legend>
               <ul class="list filter-group__list">
                 <li class="filter-group__item">
-                  <label class="filter-group__label" for="hotel">Гостиница</label>
                   <input class="filter-group__radio" type="radio" name="housing-type" id="hotel" value="hotel" checked>
+                  <label class="filter-group__label" for="hotel">Гостиница</label>
                 </li>
                 <li class="filter-group__item">
-                  <label class="filter-group__label" for="motel">Мотель</label>
                   <input class="filter-group__radio" type="radio" name="housing-type" id="motel" value="motel">
+                  <label class="filter-group__label" for="motel">Мотель</label>
                 </li>
                 <li class="filter-group__item">
-                  <label class="filter-group__label" for="apartment">Апартаменты</label>
                   <input class="filter-group__radio" type="radio" name="housing-type" id="apartment" value="apartment">
+                  <label class="filter-group__label" for="apartment">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__group price">
+            <fieldset class="filter-group price">
               <legend class="filter-group__title">Стоимость, ₽:</legend>
               <div class="filter-group__control price-control">
                 <div class="price-control__from price-control__field">
@@ -138,17 +138,17 @@
             </select>
             <ul class="list sort__view-list">
               <li class="sort__view-item">
-                <a class="sort__view-link sort__view-link--active" href="catalog.html?view=tile" aria-current="page">
+                <a class="sort__view-link sort__view-link--tile sort__view-link--active" href="catalog.html?view=tile" aria-current="page">
                   <span class="visually-hidden">Плитками</span>
                 </a>
               </li>
               <li class="sort__view-item">
-                <a class="sort__view-link" href="catalog.html?view=card">
+                <a class="sort__view-link sort__view-link--card" href="catalog.html?view=card">
                   <span class="visually-hidden">По одной</span>
                 </a>
               </li>
               <li class="sort__view-item">
-                <a class="sort__view-link" href="catalog.html?view=list">
+                <a class="sort__view-link sort__view-link--list" href="catalog.html?view=list">
                   <span class="visually-hidden">Списком</span>
                 </a>
               </li>
@@ -163,22 +163,17 @@
               <a class="card__title-link" href="#">
                 <h3 class="section-subtitle card__title">Amara Resort & Spa</h3>
               </a>
-              <div class="section-text card__wrapper--housing">
-                <p class="card__housing-type">Гостиница</p>
-                <p class="card__price">От 4000 ₽</p>
-              </div>
-              <div class="card__wrapper--btns">
-                <a class="btn" href="#">Подробнее</a>
-                <button class="btn btn--secondary" type="button">В избранное</button>
-              </div>
-              <div class="card__wrapper--rating">
-                <p class="card__stars four-stars">
-                  <span class="visually-hidden">4 звезды</span>
-                </p>
-                <p class="card__rating btn">Рейтинг
-                  <span class="card__rating-value">8,5</span>
-                </p>
-              </div>
+              <p class="card__housing-type">Гостиница</p>
+              <p class="card__price">От 4000 ₽</p>
+              <a class="btn" href="#">Подробнее</a>
+              <button class="btn btn--secondary" type="button">В избранное</button>
+              <p class="card__stars four-stars">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <p class="card__rating btn">Рейтинг:
+                <span class="card__rating-value">8,5</span>
+              </p>
+
             </li>
             <li class="catalog__item card">
               <a class="card__image-link" href="#" tabindex="-1">
@@ -187,22 +182,17 @@
               <a class="card__title-link" href="#">
                 <h3 class="section-subtitle card__title">Villas at Poco Diablo</h3>
               </a>
-              <div class="section-text card__wrapper--housing">
-                <p class="card__housing-type">Гостиница</p>
-                <p class="card__price">От 5000 ₽</p>
-              </div>
-              <div class="card__wrapper--btns">
-                <a class="btn" href="#">Подробнее</a>
-                <button class="btn btn--fourth" type="button">В избранном</button>
-              </div>
-              <div class="card__wrapper--rating">
-                <p class="card__stars four-stars">
-                  <span class="visually-hidden">4 звезды</span>
-                </p>
-                <p class="card__rating btn">Рейтинг
-                  <span class="card__rating-value">9,2</span>
-                </p>
-              </div>
+              <p class="card__housing-type">Гостиница</p>
+              <p class="card__price">От 5000 ₽</p>
+              <a class="btn" href="#">Подробнее</a>
+              <button class="btn btn--fourth" type="button">В избранном</button>
+              <p class="card__stars four-stars">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <p class="card__rating btn">Рейтинг:
+                <span class="card__rating-value">9,2</span>
+              </p>
+
             </li>
             <li class="catalog__item card">
               <a class="card__image-link" href="#" tabindex="-1">
@@ -211,22 +201,17 @@
               <a class="card__title-link" href="#">
                 <h3 class="section-subtitle card__title">Desert Quail Inn</h3>
               </a>
-              <div class="section-text card__wrapper--housing">
-                <p class="card__housing-type">Гостиница</p>
-                <p class="card__price">От 2500 ₽</p>
-              </div>
-              <div class="card__wrapper--btns">
-                <a class="btn" href="#">Подробнее</a>
-                <button class="btn btn--secondary" type="button">В избранное</button>
-              </div>
-              <div class="card__wrapper--rating">
-                <p class="card__stars three-stars">
-                  <span class="visually-hidden">3 звезды</span>
-                </p>
-                <p class="card__rating btn">Рейтинг
-                  <span class="card__rating-value">6,9</span>
-                </p>
-              </div>
+              <p class="card__housing-type">Гостиница</p>
+              <p class="card__price">От 2500 ₽</p>
+              <a class="btn" href="#">Подробнее</a>
+              <button class="btn btn--secondary" type="button">В избранное</button>
+              <p class="card__stars three-stars">
+                <span class="visually-hidden">3 звезды</span>
+              </p>
+              <p class="card__rating btn">Рейтинг:
+                <span class="card__rating-value">6,9</span>
+              </p>
+
             </li>
             <li class="catalog__item card">
               <a class="card__image-link" href="#" tabindex="-1">
@@ -235,22 +220,16 @@
               <a class="card__title-link" href="#">
                 <h3 class="section-subtitle card__title">GreenTree Inn</h3>
               </a>
-              <div class="section-text card__wrapper--housing">
-                <p class="card__housing-type">Гостиница</p>
-                <p class="card__price">От 1500 ₽</p>
-              </div>
-              <div class="card__wrapper--btns">
-                <a class="btn" href="#">Подробнее</a>
-                <button class="btn btn--secondary" type="button">В избранное</button>
-              </div>
-              <div class="card__wrapper--rating">
-                <p class="card__stars two-stars">
-                  <span class="visually-hidden">2 звезды</span>
-                </p>
-                <p class="card__rating btn">Рейтинг
-                  <span class="card__rating-value">5,0</span>
-                </p>
-              </div>
+              <p class="card__housing-type">Гостиница</p>
+              <p class="card__price">От 1500 ₽</p>
+              <a class="btn" href="#">Подробнее</a>
+              <button class="btn btn--secondary" type="button">В избранное</button>
+              <p class="card__stars two-stars">
+                <span class="visually-hidden">2 звезды</span>
+              </p>
+              <p class="card__rating btn">Рейтинг:
+                <span class="card__rating-value">5,0</span>
+              </p>
             </li>
           </ul>
 
