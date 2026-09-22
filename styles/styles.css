@@ -670,7 +670,15 @@ text-transform: uppercase;
   background-color: var(--forms-elements-2);
   border: none;
   font-family: inherit;
+
+  -moz-appearance: textfield;
  }
+
+.price-control__input::-webkit-outer-spin-button,
+.price-control__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .price-control__to {
   margin-left: 2px;
@@ -829,11 +837,16 @@ text-transform: uppercase;
 
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 212px 1fr repeat(3, min-content);
   gap: 16px 20px;
  }
 
 .card__image-link {
   grid-column: 1 / -1;
+}
+
+.card__image {
+  display: block;
 }
 
  .card__title-link {
