@@ -939,3 +939,79 @@ text-transform: uppercase;
   color: var(--texts-texts-basic);
   background-color: var(--forms-elements-2);
  }
+
+.page-header__logo-link:not(:disabled):hover,
+.navigation__link:not(.navigation__link--current):not(:disabled):hover,
+.navigation-user__link:not(:disabled):hover {
+  opacity: 0.7;
+}
+
+.page-header__logo-link:not(:disabled):active,
+.navigation__link:not(.navigation__link--current):not(:disabled):active,
+.navigation-user__link:not(:disabled):active {
+  opacity: 0.3;
+}
+
+.page-header__logo-link:not(:disabled):focus-visible,
+.navigation__link:not(.navigation__link--current):not(:disabled):focus-visible,
+.navigation-user__link:not(:disabled):focus-visible {
+  opacity: 0.7;
+}
+
+.navigation-user__btn:not(.btn--disabled):hover,
+.btn--popup:not(:disabled):hover,
+.btn--more:not(.btn--disabled):hover {
+   background-color: var(--buttons-brown-hover);
+}
+
+.navigation-user__btn:not(.btn--disabled):active,
+.btn--popup:not(:disabled):active,
+.btn--more:not(.btn--disabled):active {
+   color: var(--texts-background-small);
+}
+
+.navigation-user__btn:not(.btn--disabled):focus-visible,
+.btn--popup:not(:disabled):focus-visible,
+.btn--more:not(.btn--disabled):focus-visible {
+   background-color: var(--buttons-brown-hover);
+}
+
+.btn:disabled,
+.btn.btn--disabled {
+  background-color: var(--buttons-disabled);
+  cursor: not-allowed;
+}
+
+.btn.btn--tertiary:disabled {
+  background-color: transparent;
+  opacity: 0.1;
+}
+
+.subscription__btn:not(:disabled):hover,
+.btn--secondary:not(.btn--disabled):hover,
+.pagination__link:not(.pagination__link--current):not(.btn--disabled):hover,
+.subscription__btn:not(:disabled):focus-visible,
+.btn--secondary:not(.btn--disabled):focus-visible,
+.pagination__link:not(.pagination__link--current):not(.btn--disabled):focus-visible {
+  background-color: var(--buttons-blue-hover);
+}
+
+.subscription__btn:not(:disabled):active,
+.btn--secondary:not(.btn--disabled):active,
+.pagination__link:not(.pagination__link--current):not(.btn--disabled):active,
+.btn--fourth:not(.btn--disabled):active {
+  color: var(--texts-background-small);
+}
+
+.btn--fourth:not(.btn--disabled):hover,
+.btn--fourth:not(.btn--disabled):focus-visible {
+  background-color: var(--buttons-green-hover);
+}
+
+.btn--tertiary:not(:disabled):hover {
+  color: var(--texts-background-hover);
+}
+
+.btn--tertiary:not(:disabled):active {
+  color: var(--texts-background-small);
+}
