@@ -224,7 +224,7 @@ img {
   line-height: 10px;
   color: var(--texts-background-default);
   background-color: var(--buttons-select);
-  border-radius: 50%;
+  border-radius: 100vh;
   padding: 5px;
 
   position:absolute;
