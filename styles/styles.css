@@ -325,7 +325,7 @@ text-transform: uppercase;
 }
 
 .advantages__item:not(:has(.advantages__img)) {
-  padding: 103px 85px
+  padding: 101px 85px
 }
 
 .advantages__img {
