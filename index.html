@@ -158,6 +158,53 @@
         </a>
       </footer>
     </div>
+
+    <dialog class="modal" arria-labelledby="modal-title">
+      <div class="modal-wrapper">
+        <button class="modal__close-btn" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="modal-form__label" for="checkin-date">Дата заезда:</label>
+          <input class="modal-form__input checkin-date" type="text" name="checkin-date" id="checkin-date" value="27 апреля 2020" placeholder="Укажите дату заезда" required>
+          <span class="modal-form__input-prompt error-text">Мы не можем отправить вас в прошлое.</span>
+          <label class="modal-form__label" for="checkout-date">Дата выезда:</label>
+          <input class="modal-form__input checkout-date" type="text" name="checkout-date" id="checkout-date" value="1 сентября 2023" placeholder="Укажите дату выезда" required>
+          <span class="modal-form__input-prompt">На эти даты есть свободные номера. Пока есть.</span>
+          <label class="modal-form__label" for="adults-counter">Взрослые:</label>
+          <div class="modal-form__counter-wrapper">
+            <button class="modal-form__counter-btn modal-form__counter-btn--minus" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <input class="modal-form__counter-input" type="number" name="adults-counter" id="adults-counter" value="2" placeholder="2" min="1">
+            <button class="modal-form__counter-btn modal-form__counter-btn--plus" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
+          </div>
+          <div class="modal-form__tooltip-wrapper">
+            <label class="modal-form__label" for="children-counter">Дети:</label>
+            <div class="modal-form__tooltip tooltip">
+              <button class="tooltip__toggle" type="button" aria-labelledby="tooltip__text">
+                <span class="visually-hidden">Открыть всплывающую подсказку</span>
+              </button>
+              <span class="tooltip__text" role="tooltip" id="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </div>
+          </div>
+          <div class="modal-form__counter-wrapper">
+            <button class="modal-form__counter-btn modal-form__counter-btn--minus" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <input class="modal-form__counter-input" type="number" name="children-counter" id="children-counter" value="2" placeholder="2" min="0">
+            <button class="modal-form__counter-btn modal-form__counter-btn--plus" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
+          </div>
+          <button class="btn btn--secondary modal-form__submit-btn" type="submit">Найти</button>
+        </form>
+      </div>
+    </dialog>
+    <script src="main.js"></script>
   </body>
 
 </html>

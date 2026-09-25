@@ -1123,3 +1123,131 @@ text-transform: uppercase;
 .slider__thumb:not(:disabled):active {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
+
+.modal {
+  width: 717px;
+  min-height: 576px;
+  padding: 64px 70px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  background: var(--texts-background-default);
+}
+
+.modal::backdrop {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-wrapper {
+  position: relative;
+}
+
+.modal__close-btn {
+  position: absolute;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal__close-btn::after {
+  content: "";
+  margin: auto;
+  mask-image: url("../images/icons/cross.svg");
+  mask-repeat: no-repeat;
+  mask-size: 14px 14px;
+  mask-position: center;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--texts-texts-basic);
+}
+
+.modal-title {
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-columns: 137px 110px 1fr 110px;
+  grid-template-rows: repeat(6, minmax(48px, min-content));
+}
+
+.modal-form__label {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  align-self: center;
+}
+
+.modal-form__input {
+  grid-column: 2 / -1;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  background-color: var(--forms-elements-2);
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-form__counter-input {
+  width: 110px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--forms-elements-2);
+  padding: 14px 10px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal-form__counter-btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-form__counter-wrapper {
+  display: grid;
+  grid-template-columns: 40px 31px 40px;
+  place-items: anchor-center;
+}
+
+.modal-form__tooltip-wrapper {
+  display: flex;
+  margin-right: 46px;
+  margin-left: auto;
+}
+
+.modal-form__input-prompt {
+  grid-column: 2 / -1;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--texts-second);
+}
+
+.modal-form__submit-btn {
+  grid-column: 1 / -1;
+  margin-top: 48px;
+  min-height: 48px;
+}
+
+.tooltip__text {
+  display: none;
+}
+
+.error-text {
+  color: var(--texts-error);
+}
