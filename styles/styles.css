@@ -391,15 +391,15 @@ text-transform: uppercase;
   background-position: center 80px;
 }
 
-.service__item.housing {
+.service__item--housing {
   background-image: url("../images/icons/advantages-housing.svg");
 }
 
-.service__item.food {
+.service__item--food {
   background-image: url("../images/icons/advantages-food.svg");
 }
 
-.service__item.gifts {
+.service__item--gifts {
   background-image: url("../images/icons/advantages-gifts.svg");
 }
 
@@ -637,7 +637,7 @@ text-transform: uppercase;
   border: none;
 }
 
-.filter-group.housing {
+.filter-group--housing {
   margin-right: 140px;
 }
 
@@ -688,7 +688,7 @@ text-transform: uppercase;
   line-height: 23px;
  }
 
-.filter-group.price {
+.filter-group--price {
   width: 288px;
 }
 
@@ -805,13 +805,17 @@ text-transform: uppercase;
 }
 
 .sort__select {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--texts-second);
   appearance: none;
+
   width: 292px;
   height: 49px;
   padding: 12px 20px;
   border-radius: 4px;
   border: 2px solid var(--buttons-disabled);
-  font-family: inherit;
 
   background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
@@ -876,13 +880,6 @@ text-transform: uppercase;
   background-color: #e6e6e6;
   bottom: -40px;
 }
-
- .sort__select {
-  font-size: 18px;
-  line-height: 21px;
-  color: var(--texts-second);
- }
-
 
  .card {
   border: 1px solid #e6e6e6;
