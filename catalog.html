@@ -15,7 +15,7 @@
           <img class="page-header__logo-img" src="images/logos/sedona.svg" width="140" height="70" alt="Логотип города Седона">
         </a>
 
-        <nav class="navigation">
+        <nav class="navigation navigation-user">
           <ul class="list navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="index.html">Главная</a>
@@ -54,12 +54,12 @@
             <nav class="inner-header__nav breadcrumbs">
               <ol class="list breadcrumbs__list">
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link breadcrumbs--home" href="index.html">
+                  <a class="breadcrumbs__link breadcrumbs__link--home" href="index.html">
                     <span class="visually-hidden">Главная</span>
                   </a>
                 </li>
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link breadcrumbs--catalog" aria-current="page">Гостиницы
+                  <a class="breadcrumbs__link breadcrumbs__link--catalog" aria-current="page">Гостиницы
                   </a>
                 </li>
               </ol>
@@ -114,7 +114,7 @@
                   <input class="price-control__input" type="number" name="max-price" id="max-price" placeholder="9000" value="9000">
                 </div>
               </div>
-              <div class="price__slider slider">
+              <div class="filter-group__slider slider">
                 <div class="slider__range"></div>
                 <button class="slider__thumb slider__thumb--min" type="button" role="slider" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0" aria-label="Минимальная цена"></button>
                 <button class="slider__thumb slider__thumb--max" type="button" role="slider" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="9000" aria-label="Максимальная цена"></button>
@@ -270,23 +270,25 @@
       </main>
 
       <footer class="page-footer" data-test="footer">
-        <ul class="list socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener noreferrer">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
+        <div class="page-footer__socials socials">
+          <ul class="list socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <a class="page-footer__tel-link" href="tel:+78128121212">
           <span class="visually-hidden">Позвоните нам!</span>+7 (812) 812-12-12
